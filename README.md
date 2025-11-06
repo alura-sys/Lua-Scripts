@@ -1,2 +1,14 @@
-# PS99-Scripts
-PS99 Event Scripts
+# PS99 Scripts
+
+Event automation script for **PS99 Halloween 2025**.  
+GUI was made via AI
+For customization just fork the repo and change **`execute.lua`** pathing to your git
+
+## Usage
+1. Copy the contents of **`execute.lua`**  
+2. Paste it into your preferred Roblox executor  
+
+## Structure
+- `exec.lua` – main bootstrapper  
+- `util.lua` – handles module loading & HTTP fetching  
+- `main.lua`, `gui.lua`, `functions.lua`, `config.lua` – core script logic  
