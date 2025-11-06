@@ -1,4 +1,4 @@
-local RAW = "https://raw.githubusercontent.com/alura-sys/PetSim99-Scripts/main/Halloween"
+local RAW = "https://raw.githubusercontent.com/alura-sys/PS99-Scripts/main/Halloween"
 
 local function quick_get(u)
     if syn and syn.request then
@@ -28,3 +28,4 @@ local urls = {
 }
 
 return Util.bootstrap(urls, "Halloween/main")
+
