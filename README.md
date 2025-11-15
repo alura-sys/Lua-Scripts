@@ -8,9 +8,6 @@ For customization just fork the repo and change **`execute.lua`** pathing to you
 - Auto Claim Candy
 - Auto Open Eggs
 - Auto Open Houses
-(All can be used simultaneously to quickly progress)
-
-![Alt text](https://i.imgur.com/chpIZGa.png)
 
 ## Usage
 1. Copy the contents of **`execute.lua`**  
