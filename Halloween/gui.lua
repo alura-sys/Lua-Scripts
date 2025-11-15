@@ -37,7 +37,7 @@ function GUI.mount(playerGui)
         Options = Config.EGG_OPTIONS,
         CurrentOption = selectedEgg,
         Callback = function(option)
-            selectedEgg = option
+            selectedEgg = typeof(option) == "table" and option[1] or option
         end
     })
 
@@ -46,7 +46,7 @@ function GUI.mount(playerGui)
         Options = Config.HOUSE_OPTIONS,
         CurrentOption = selectedHouse,
         Callback = function(option)
-            selectedHouse = option
+            selectedHouse = typeof(option) == "table" and option[1] or option
         end
     })
 
