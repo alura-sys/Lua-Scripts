@@ -22,9 +22,11 @@ function GUI.mount(playerGui)
 
     task.wait(5)
     local gui = game:GetService("CoreGui"):WaitForChild("Rayfield")
-    gui.Size = UDim2.new(0, 350, 0, 400)
+    gui.Size = UDim2.new(0, 200, 0, 400)
 
-    local Tab = Window:CreateTab("Main", 4483362458)
+        local Tab = Window:CreateTab("Main", 4483362458)
+
+    Tab:CreateSection("Teleports")
 
     local selectedPlayer = nil
 
@@ -60,6 +62,8 @@ function GUI.mount(playerGui)
             end
         end
     })
+
+    Tab:CreateSection("Fly")
 
     Tab:CreateToggle({
         Name = "Omnifly",
