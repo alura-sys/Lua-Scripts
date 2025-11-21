@@ -21,14 +21,8 @@ function GUI.mount(playerGui)
     })
 
     local Tab = Window:CreateTab("Main", 4483362458)
-    
-    task.wait(0.2)
-    local rf = game:GetService("CoreGui"):WaitForChild("Rayfield", 5)
-    local main = rf:WaitForChild("Main", 5)
 
-    main.Size = UDim2.new(0, 350, 0, 400)
-
-    Tab:CreateSection("Teleports")
+    Tab:CreateSection("Teleport System")
 
     local selectedPlayer = nil
 
@@ -45,7 +39,7 @@ function GUI.mount(playerGui)
         while true do
             dropdown.Options = Functions.getPlayers()
             Rayfield:Refresh()
-            task.wait(5)
+            task.wait(2)
         end
     end)
 
